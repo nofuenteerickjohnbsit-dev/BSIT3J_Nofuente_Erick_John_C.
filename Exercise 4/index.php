@@ -10,15 +10,8 @@ $team_members = [
     ["name" => "Dianne Claire Redulosa", "img" => "Dianne.jpg", "quote" => '"Tamad na Artist"', "info" => "Role: Living Legend <br> Specialty: Digital Illustration & Visual Assets"]
 ];
 
-/*
- * POST
- * Get the selected member from the POST request.
- */
 $member = isset($_POST['member']) ? $_POST['member'] : '';
 
-/*
- * Optional: display a message when a member is selected.
- */
 if (!empty($member)) {
     $selected_message = "You selected: " . htmlspecialchars($member);
 }
